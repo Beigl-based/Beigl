@@ -140,9 +140,18 @@
             </div>
             <div class="row mt-5">
                 <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-4">Kontaktujte nás</h2>
+                    
                     <form action="https://formspree.io/f/movdgzww" method="POST">
                         <input type="text" name="name" class="form-control mb-3" placeholder="Jméno" required>
                         <input type="email" name="email" class="form-control mb-3" placeholder="Email" required>
+                        
+                        <!-- Telefonní pole s validací -->
+                        <input type="tel" name="phone" class="form-control mb-3" 
+                               placeholder="Telefon (nepovinné)"
+                               pattern="[0-9]{9,15}" 
+                               title="Zadejte platné telefonní číslo (9-15 číslic bez mezer)">
+                        
                         <textarea name="message" class="form-control mb-3" rows="4" placeholder="Zpráva" required></textarea>
                         <button type="submit" class="btn btn-primary">Odeslat zprávu</button>
                     </form>
