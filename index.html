@@ -189,8 +189,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
+            </div>            
             <!-- Upraveno: Nové tlačítko se šipkou -->
             <div class="collapse-toggle-container">
                 <button id="btnAuto" class="collapse-toggle-btn collapsed" 
@@ -206,43 +205,48 @@
 
     <!-- Bateriové úložiště -->
     <section id="baterie" class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center">
-                <h1 class="text-center mb-3">Bateriové úložiště</h1>
-                <div class="mb-4">
-                    <h4 class="fst-italic mb-4">Inovativní bateriová úložiště pro každou potřebu – od domácností po průmysl</h4>
-                    <div class="collapse" id="baterieContent">
-                        <div class="mt-3">
-                            <h5>Naše řešení</h5>
-                            <p>Vyrábíme bateriová úložiště přesně podle vašich požadavků: od kompaktních systémů pro malé provozy až po <strong>velkokapacitní instalace s výkony v megawattech</strong>. S námi získáte komplexní služby - od návrhu až po dlouhodobý provoz.</p>
-                        </div>
-                        <div class="mt-4">
-                            <h5>Co dodáváme</h5>
-                            <ul>
-                                <li><strong>Li-ion technologie:</strong> Moderní baterie s vysokou hustotou energie</li>
-                                <li><strong>Druhý život baterií:</strong> Využíváme plně funkční články z elektromobilů</li>
-                                <li><strong>Komplexní servis:</strong> Zvládáme vše od papírování po technický dohled</li>
-                            </ul>
-                        </div>
-                        <div class="mt-4">
-                            <h5>Udržitelnost v praxi</h5>
-                            <p>Díky recyklaci baterií z elektromobilů <strong>prodlužujeme životnost materiálů</strong> a minimalizujeme odpad. Každé úložiště navrhujeme s ohledem na ekologickou stopu.</p>
-                        </div>
+    <div class="container">
+        <div class="text-center">
+            <h1 class="text-center mb-3">Bateriové úložiště</h1>
+            <div class="mb-4">
+                <h4 class="fst-italic mb-4">Inovativní bateriová úložiště pro každou potřebu – od domácností po průmysl</h4>
+                <div class="collapse" id="baterieContent">
+                    <!-- Naše řešení - zarovnáno na střed -->
+                    <div class="mt-5">
+                        <h5>Naše řešení</h5>
+                        <p>Vyrábíme bateriová úložiště přesně podle vašich požadavků: od kompaktních systémů pro malé provozy až po <strong>velkokapacitní instalace s výkony v megawattech</strong>. S námi získáte komplexní služby - od návrhu až po dlouhodobý provoz.</p>
                     </div>
-                    <!-- Upraveno: Nové tlačítko se šipkou -->
-                    <div class="collapse-toggle-container">
-                        <button id="btnBaterie" class="collapse-toggle-btn collapsed" 
-                                type="button" data-bs-toggle="collapse" 
-                                data-bs-target="#baterieContent" 
-                                aria-expanded="false" 
-                                aria-controls="baterieContent">
-                            <i class="bi bi-chevron-down"></i>
-                        </button>
+                    
+                    <!-- Co dodáváme - zarovnáno vlevo -->
+                    <div class="mt-5 text-start">
+                        <h5 class="ps-0">Co dodáváme</h5>
+                        <ul class="ps-0" style="margin-left: 0.5rem;">
+                            <li class="mb-2"><strong>Li-ion technologie:</strong> Moderní baterie s vysokou hustotou energie</li>
+                            <li class="mb-2"><strong>Druhý život baterií:</strong> Využíváme plně funkční články z elektromobilů</li>
+                            <li><strong>Komplexní servis:</strong> Zvládáme vše od papírování po technický dohled</li>
+                        </ul>
                     </div>
+                    
+                    <!-- Udržitelnost v praxi - zarovnáno na střed -->
+                    <div class="mt-5">
+                        <h5>Udržitelnost v praxi</h5>
+                        <p>Díky recyklaci baterií z elektromobilů <strong>prodlužujeme životnost materiálů</strong> a minimalizujeme odpad. Každé úložiště navrhujeme s ohledem na ekologickou stopu.</p>
+                    </div>
+                </div>
+                <!-- Tlačítko se šipkou -->
+                <div class="collapse-toggle-container">
+                    <button id="btnBaterie" class="collapse-toggle-btn collapsed" 
+                            type="button" data-bs-toggle="collapse" 
+                            data-bs-target="#baterieContent" 
+                            aria-expanded="false" 
+                            aria-controls="baterieContent">
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Kontakty -->
     <section id="kontakty" class="py-5">
