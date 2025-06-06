@@ -92,8 +92,8 @@
             <h1 class="text-center mb-5">O nás</h1>
             <div class="row">
                 <div class="text-center">
-                    <p class="lead mb-4">Jsme mladá dynamická firma, která se zaměřuje na moderní, chytrá řešení. Jsme nadšenci do technologií a inovací, kteří se chtějí podílet na rozvoji „zdravého světa" propojením technologií s udržitelností.</p>
-                    <p class="lead mb-4">Současně je naším cílem klientům šetřit čas a snižovat náklady na energie. Jsme prostě <strong>beigl</strong> - dodavatel řešení v oblasti automatizace budov, energetického managementu a bateriových uložišť na míru. Pomáháme zvyšovat komfort, zlepšovat bezpečnost a optimalizovat provozní náklady.</p>
+                    <p class="lead mb-4">Jsme beigl - dodavatel řešení v oblasti automatizace budov, energetického managementu a bateriových uložišť. Pomáháme zvyšovat komfort, zlepšovat bezpečnost a optimalizovat provozní náklady.</p>
+                    <p class="lead mb-4">Jsme mladá, dynamická firma, tvořena partou nadšenců do technologií a inovací. U našich projektů se zaměřujeme na udržitelnost, retrofiting a cirkularitu. Proto jsme se spojili se Švýcarskou firmou, která se více než 50 let zabývá řízením a regulací HVAC, a následně rozšířila své portfolio o automatizaci budov. Dalším důležitým bodem naší činnosti je specializace na výstavby bateriových uložišť, kde využíváme baterie z automobilů a tím jím dáváme druhý život. Naší prioritou je dodat klientům produkt dle jejich přání a potřeb.</p>
                 </div>
                 <div class="col-lg-6">
                 </div>
@@ -101,107 +101,193 @@
         </div>
     </section>
 
-    <!-- Automatizace budov -->
-    <style>
-        .text-justify {
-            text-align: justify;
+<style>
+    .text-justify {
+        text-align: justify;
+    }
+    
+    .custom-list {
+        padding-left: 1.5rem;
+    }
+    
+    .section-gap {
+        margin-bottom: 6rem !important;
+    }
+    
+    /* Styly pro obrázky a zarovnání */
+    .img-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .first-section-img {
+        padding-right: 30px;
+        width: 80%; /* Zmenšení o 20% */
+        margin-left: auto; /* Zarovnání doprava */
+        margin-right: auto; /* Centrování v kontejneru */
+        display: block;
+    }
+    
+    .second-section-img {
+        padding-left: 30px;
+    }
+    
+    @media (max-width: 991.98px) {
+        .img-container {
+            flex-direction: column;
+        }
+        .first-section-img,
+        .second-section-img {
+            padding: 0;
+            margin-bottom: 20px;
+            width: 100%; /* Na mobilech plná šířka */
+        }
+        .img-mobile-order-1 {
+            order: 1;
+        }
+        .img-mobile-order-2 {
+            order: 2;
+        }
+        .vertical-center-md {
+            padding-top: 0 !important;
+        }
+        .left-edge-padding {
+            padding-left: 0 !important;
         }
         
-        .custom-list {
-            padding-left: 1.5rem;
+        /* Reset pro mobilní zobrazení */
+        .app-image-left {
+            margin-left: 0 !important;
+            padding-left: 0 !important;
         }
-        
-        .section-gap {
-            margin-bottom: 6rem !important;
+    }
+    
+    /* Vertikální centrování a odsazení */
+    .vertical-center-md {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    /* Odsazení pro levý okraj obrázku - zvýšené */
+    .left-edge-padding {
+        padding-left: 15px;
+    }
+    
+    @media (min-width: 992px) {
+        .left-edge-padding {
+            padding-left: calc((100vw - 960px) / 3 + 30px) !important; /* Větší odsazení */
         }
-        
-        /* Přesné zarovnání prvního bloku */
-        @media (min-width: 992px) {
-            .custom-offset {
-                margin-left: 45%;
-                width: 50%;
-            }
+        .right-edge-padding {
+            padding-right: calc((100vw - 960px) / 4);
         }
-        
-        @media (min-width: 1200px) {
-            .custom-offset {
-                margin-left: 40%;
-                width: 55%;
-            }
-        }
-    </style>
 
-    <section id="automatizace" class="py-5">
-        <div class="text-center">
-            <h1 class="mb-3">Automatizace budov</h1>
-            <h4 class="fst-italic mb-5">Kvalita a inovace ze Švýcarska</h4>
-            <div class="collapse" id="automatizaceContent">
-                <!-- První blok s přesným zarovnáním -->
-                <div class="row justify-content-end">
-                    <div class="col-lg-10">
-                        <div class="custom-offset">
-                            <h5 class="text-start ps-3 ps-md-0">Spolehlivé produkty se švýcarskou přesností</h5>
-                            <p class="text-justify">
-                                Výroba s nejvyšší přesností zajišťuje, aby produkty splňovaly všechny požadavky. 
-                                Kvalita a preciznost jsou jádrem firemní filozofie. Jako instalační a konzultační 
-                                společnost těžíme z těchto vysokých standardů.
-                            </p>
-                        </div>
-                    </div>
+        /* MAXIMÁLNÍ POSUN OBRÁZKU APLIKACE VLEVO */
+        .app-image-left {
+            padding-left: 0 !important;
+            margin-left: -150px !important; /* Extrémní posun vlevo */
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .left-edge-padding {
+            padding-left: calc((100vw - 1140px) / 3 + 40px) !important; /* Větší odsazení */
+        }
+        .right-edge-padding {
+            padding-right: calc((100vw - 1140px) / 4);
+        }
+
+        /* MAXIMÁLNÍ POSUN PRO VELKÉ OBRAZOVKY */
+        .app-image-left {
+            margin-left: -200px !important; /* Maximální možný posun */
+        }
+    }
+</style>
+
+<section id="automatizace" class="py-5">
+    <div class="text-center">
+        <h1 class="mb-3">Automatizace budov</h1>
+        <h4 class="fst-italic mb-5">Kvalita a inovace ze Švýcarska</h4>
+        <div class="collapse" id="automatizaceContent">
+            <!-- První blok s obrázkem vlevo -->
+            <div class="row mb-5">
+                <!-- Obrázek 1 - vlevo s odsazením a zmenšený -->
+                <div class="col-lg-6 img-container img-mobile-order-1 left-edge-padding">
+                    <img src="images/budova.jpg" alt="Spolehlivé produkty" class="img-fluid rounded first-section-img">
                 </div>
-
-                <div class="section-gap"></div>
-
-                <!-- Dvou-sloupcová sekce -->
-                <div class="row">
-                    <div class="col-lg-5 offset-lg-1">
-                        <h5 class="text-start ps-3 ps-md-0">S kabeláží nebo bez ní: správné řešení pro každou potřebu</h5>
-                        <p class="text-justify">
-                            Náš server je k dispozici v designové bezdrátové nebo kabelové verzi do rozvaděče. 
-                            Díky různým rozšiřujícím modulům a branám lze naši automatizaci budov přizpůsobit 
-                            jakékoli velikosti a požadavkům.
-                        </p>
-                    </div>
-
-                    <div class="col-lg-5">
-                        <h5 class="text-start ps-3 ps-md-0">Čím se náš systém ovládá?</h5>
-                        <p class="text-justify">
-                            Chytrá ovládací jednotka se díky svému nadčasovému designu nenápadně začlení do 
-                            jakéhokoli interiéru. Kromě toho je v ní integrován senzor teploty a vlhkosti 
-                            a také vícebarevné osvětlení.
-                        </p>
-                    </div>
+                
+                <!-- Textový obsah - vpravo -->
+                <div class="col-lg-6 img-mobile-order-2 vertical-center-md right-edge-padding">
+                    <h5 class="text-start ps-3 ps-md-0">Spolehlivé produkty se švýcarskou přesností</h5>
+                    <p class="text-justify">
+                        Výroba s nejvyšší přesností zajišťuje, aby produkty splňovaly všechny požadavky. 
+                        Kvalita a preciznost jsou jádrem firemní filozofie. Jako instalační a konzultační 
+                        společnost těžíme z těchto vysokých standardů.
+                    </p>
                 </div>
-
-                <div class="section-gap"></div>
-
-                <!-- Sekce s aplikací -->
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
-                        <div class="mt-4">
-                            <h5 class="text-start ps-3 ps-md-0">Mobilní a webová aplikace:</h5>
-                            <ul class="custom-list text-start">
-                                <li>Uživatelsky přívětivá aplikace (pro Android a iOS)</li>
-                                <li>Slouží jako centrální zobrazovací a ovládací prvek</li>
-                                <li>Podporuje správu místností a zařízení</li>
-                                <li>Umožňuje přesné plánování teploty</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>            
-            <!-- Upraveno: Nové tlačítko se šipkou -->
-            <div class="collapse-toggle-container">
-                <button id="btnAuto" class="collapse-toggle-btn collapsed" 
-                        type="button" data-bs-toggle="collapse" 
-                        data-bs-target="#automatizaceContent" 
-                        aria-expanded="false" 
-                        aria-controls="automatizaceContent">
-                    <i class="bi bi-chevron-down"></i>
-                </button>
             </div>
+
+            <div class="section-gap"></div>
+
+            <!-- Dvou-sloupcová sekce -->
+            <div class="row">
+                <div class="col-lg-5 offset-lg-1">
+                    <h5 class="text-start ps-3 ps-md-0">S kabeláží nebo bez ní: správné řešení pro každou potřebu</h5>
+                    <p class="text-justify">
+                        Náš server je k dispozici v designové bezdrátové nebo kabelové verzi do rozvaděče. 
+                        Díky různým rozšiřujícím modulům a branám lze naši automatizaci budov přizpůsobit 
+                        jakékoli velikosti a požadavkům.
+                    </p>
+                </div>
+
+                <div class="col-lg-5">
+                    <h5 class="text-start ps-3 ps-md-0">Čím se náš systém ovládá?</h5>
+                    <p class="text-justify">
+                        Chytrá ovládací jednotka se díky svému nadčasovému designu nenápadně začlení do 
+                        jakéhokoli interiéru. Kromě toho je v ní integrován senzor teploty a vlhkosti 
+                        a také vícebarevné osvětlení.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section-gap"></div>
+
+            <!-- Sekce s aplikací a obrázkem 2 -->
+            <div class="row align-items-start">
+                <!-- Text s odrážkami - vlevo -->
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="mt-4">
+                        <h5 class="text-start ps-3 ps-md-0">Mobilní a webová aplikace:</h5>
+                        <ul class="custom-list text-start">
+                            <li>Uživatelsky přívětivá aplikace (pro Android a iOS)</li>
+                            <li>Slouží jako centrální zobrazovací a ovládací prvek</li>
+                            <li>Podporuje správu místností a zařízení</li>
+                            <li>Umožňuje přesné plánování teploty</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Obrázek 2 - vpravo (větší) s MAXIMÁLNÍM POSUNEM VLEVO -->
+                <div class="col-lg-6 img-container">
+                    <img src="images/aplikace.jpg" alt="Mobilní aplikace" 
+                         class="img-fluid rounded second-section-img app-image-left" 
+                         style="max-height: 320px; width: auto;">
+                </div>
+            </div>
+        </div>            
+        <!-- Upraveno: Nové tlačítko se šipkou -->
+        <div class="collapse-toggle-container">
+            <button id="btnAuto" class="collapse-toggle-btn collapsed" 
+                    type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#automatizaceContent" 
+                    aria-expanded="false" 
+                    aria-controls="automatizaceContent">
+                <i class="bi bi-chevron-down"></i>
+            </button>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Bateriové úložiště -->
     <section id="baterie" class="py-5 bg-light">
